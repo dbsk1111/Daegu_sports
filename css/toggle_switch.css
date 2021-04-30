@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* .items{
+  margin-bottom: 20px;
+} */
+.switch{
+  position: relative;
+  /* 안쪽을 앱솔루트로 잡을 거라 기준 필요 */
+  display: inline-block;
+  /* 형태 잡기 편하니까 */
+  width: 60px;
+  height: 34px;
+}
+
+.switch .slider{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f1f1f1;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,.2);
+  transition: 0.2s ease;
+}
+.switch .slider:before{
+  content:'';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 4px;
+  left: 4px;
+  background: white;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+  transition: 0.2s ease;
+}
+.switch > input{ display: none; }
+
+.switch > input:checked + .slider{
+  background: #2196f3;
+}
+.switch > input:checked + .slider:before{
+  left: 30px;
+}
+
+/* 스위치 끝 */
+
+
+/* round type */
+.switch.round .slider{
+  border-radius: 17px;
+}
+.switch.round .slider:before{
+  border-radius: 17px;
+}
+/* size type */
+/* minimum */
+.switch.medium{
+  width: 56px;
+  height: 30px;
+}
+.switch.medium .slider:before{
+  width: 22px;
+  height: 22px;
+}
+/* small */
+.switch.small{
+  width: 52px;
+  height: 26px;
+}
+.switch.small .slider:before{
+  width: 18px;
+  height: 18px;
+}
+
+/* green */
+.switch.green input:checked + .slider{
+  background: #02cb55;
+}
+/* purple */
+.switch.purple input:checked + .slider{
+  background: #f6017a;
+}
+/* gold */
+.switch.gold input:checked + .slider{
+  background: gold;
+}
