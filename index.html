@@ -3,96 +3,187 @@
 <head>
   <meta charset="utf-8" name="news" content="대구광역시체육회 소식">
   <title>대구광역시체육회</title>
-  <link rel="stylesheet" href="./css/initial.css">
+  <!-- <link rel="stylesheet" href="./css/initial.css"> -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./img/favicon.ico"/>
+  <script type="text/javascript" src="./js/jquery-3.6.0.slim.min.js"></script>
+  <script type="text/javascript" defer src="./js/scroll.js"></script>
 </head>
 <body>
-<header id="header">
-  <h1>
-    <a href="http://www.daegusports.or.kr/">대구광역시체육회</a>
-  </h1>
-  <div class="login_menu">
-    <ul>
-      <li><a href="#" class="login">LOGIN</a></li>
-      <li><a href="#" class-"join">JOIN US</a></li>
+<div class="fullpage">
+  <header id="header">
+    <h1>
+      <a href="http://www.daegusports.or.kr/">대구광역시체육회</a>
+    </h1>
+    <div class="login_menu">
+      <ul>
+        <li><a href="#" class="login">LOGIN</a></li>
+        <li><a href="#" class-"join">JOIN US</a></li>
+      </ul>
+    </div>
+    <nav id="gnb">
+      <ul>
+        <li>
+          <a href="#">알림</a>
+          <ul class="sub_menu">
+            <li><a href="#">공지</a></li>
+            <li><a href="#">공고</a></li>
+            <li><a href="#">경영공시/규정</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">소개</a>
+          <ul class="sub_menu">
+            <li><a href="#">대구광역시체육회</a></li>
+            <li><a href="#">스포츠과학센터</a></li>
+            <li><a href="#">대구체육단체</a></li>
+            <li><a href="#">구군/종목단체 소식</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">커뮤니티</a>
+          <ul class="sub_menu">
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">보도자료</a></li>
+            <li><a href="#">자료실</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">대구스포츠단</a>
+          <ul class="sub_menu">
+            <li><a href="#">선수단 소개</a></li>
+            <li><a href="#">뉴스</a></li>
+          </ul>
+        </li>
+        <li><a href="#">스포츠인권센터</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn_menu">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>
+    <div class="all_menu">
+      <div class="menu_area">
+        <nav class="all_menu_gnb">
+          <ul>
+            <li>
+              <a href="#">알림</a>
+              <ul class="sub_menu">
+                <li><a href="#">공지</a></li>
+                <li><a href="#">공고</a></li>
+                <li><a href="#">경영공시/규정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">소개</a>
+              <ul class="sub_menu">
+                <li><a href="#">대구광역시체육회</a></li>
+                <li><a href="#">스포츠과학센터</a></li>
+                <li><a href="#">대구체육단체</a></li>
+                <li><a href="#">구군/종목단체 소식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="sub_menu">
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">대구스포츠단</a>
+              <ul class="sub_menu">
+                <li><a href="#">선수단 소개</a></li>
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">스포츠인권센터</a></li>
+          </ul>
+        </nav>
+        <ul class="all_menu_info">
+  				<li>
+  					<p>Contact us</p>
+  					<a href="tel:053-600-0300">TEL. 053-600-0300</a><br>
+            <a href="fax:070-4275-1304">FAX. 070-4275-1304</a>
+  					</p>
+  				</li>
+  				<li>
+  					<p>Address</p>
+  					<address>
+  						<span>대구광역시체육회</span><br>대구광역시 수성구 유니버시아드로42길 127
+  					</address>
+  				</li>
+  			</ul>
+      </div>
+      <div class="img_area">
+        <div class="building_img"></div>
+        <div class="map_img"></div>
+      </div>
+    </div>
+  </header>
+  <input type="checkbox" id="toggle">
+  <div id="lnb">
+    <ul class="lnb_bar">
+      <li><a href="#page1" class="section_name active_section">MAIN</a></li>
+      <li><a href="#page2" class="section_name">NEWS</a></li>
+      <li><a href="#page3" class="section_name">GALLERY</a></li>
+      <li><a href="#page4" class="section_name">WEBSITE</a></li>
+      <li><a href="#page5" class="section_name">MAP</a></li>
     </ul>
   </div>
-  <nav id="gnb">
-    <ul>
-      <li><a href="#">알림</a></li>
-      <li><a href="#">소개</a></li>
-      <li><a href="#">커뮤니티</a></li>
-      <li><a href="#">대구스포츠단</a></li>
-      <li><a href="#">스포츠인권센터</a></li>
-    </ul>
-  </nav>
-  <a href="#" class="btn_menu"><i>All menu</i>
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </a>
-</header>
-<input type="checkbox" id="toggle">
-
-<div class="fullpage">
-  <div id="lnb">
+  <!-- <div id="lnb">
     <ul class="lnb_bar">
       <li>
         <a href="#" class="active_section">
-          <span class="page_number">01</span>
-          <span class="page_name">MAIN</span>
+          <span id="page_number">01</span>
+          <span id="page_name">MAIN</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="page_number">02</span>
-          <span class="page_name">NEWS</span>
+          <span id="page_number">02</span>
+          <span id="page_name">NEWS</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="page_number">03</span>
-          <span class="page_name">GALLERY</span>
+          <span id="page_number">03</span>
+          <span id="page_name">GALLERY</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="page_number">04</span>
-          <span class="page_name">WEBSITE</span>
+          <span id="page_number">04</span>
+          <span id="page_name">WEBSITE</span>
         </a>
       </li>
       <li>
         <a>
-          <span class="page_number">05</span>
-          <span class="page_name">MAP</span>
+          <span id="page_number">05</span>
+          <span id="page_name">MAP</span>
         </a>
       </li>
     </ul>
-  </div>
-  <section class="page1">
+  </div> -->
+  <section id="page1">
     <div class="text_area">
       <h2>
         <p>DAEGU SPORTS COUNCIL</p>
         건강 100세 시대<br>체육으로 행복한 대구
       </h2>
     </div>
-    <video class="video_area" src="./img/video_main.mp4" type="video/mp4" autoplay muted loop></video>
+    <video class="video_area" src="./img/video_main.mp4" autoplay muted loop></video>
   </section>
-  <section class="page2">
+  <section id="page2">
     <div class="news_area">
-      <div class="page_title">
+      <div class="section_title">
         <h3>News</h3>
         <h4>체육회소식</h4>
         <p>대구광역시체육회 정보를 안내드립니다.</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
       <a href="#" class="more_btn">바로<br>가기</a>
       <div class="tab_wrap">
@@ -107,11 +198,10 @@
           <label for="fourth">보도자료</label>
         </span>
         <div class="tab_item">
-          <!-- ul>li*3>div+p+p -->
           <ul>
             <li>
               <a href="#">
-                <div class="tab_title">"방(에)콕! 올림픽" 최종 수상작 발표</div>
+                <div class="tab_title new">"방(에)콕! 올림픽" 최종 수상작 발표</div>
                 <p>2021“방(에)콕! 올림픽”최종 수상작 발표, 최우수작품상 120만원(온누리상품권) 황제게임 이0연 5594</p>
                 <span>21.03.22</span>
               </a>
@@ -133,25 +223,24 @@
           </ul>
         </div>
         <div class="tab_item">
-          <!-- ul>li*3>div+p+p -->
           <ul>
             <li>
               <a href="#">
-                <div class="tab_title">「2021년 신나는 주말체육학교 운영」강사모집(서구)</div>
+                <div class="tab_title new">「2021년 신나는 주말체육학교 운영」강사모집(서구)</div>
                 <p>문화체육관광부와 대한체육회는 교육부, 시ㆍ도교육청과 협력하여 토요 휴업일에 대한 학생들의 스포츠ㆍ레져 활동 수요를 충족시키고, 청소년의 체력강화 및 건전한 여가 선용 지원을 위한「신나는 주말체육학교 운영」사업을 실시하고 있습니다.</p>
                 <span>21.03.22</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <div class="tab_title">「2021년 신나는 주말체육학교 운영」강사모집(달서구)</div>
+                <div class="tab_title new">「2021년 신나는 주말체육학교 운영」강사모집(달서구)</div>
                 <p>문화체육관광부와 대한체육회는 교육부, 남부교육지원청과 협력하여 토요 휴업일에 대한 학생들 의 스포츠․ 레져 활동 수요를 충족시키고, 청소년의 체력강화 및 건전한 여가 선용 지원을 위한 「신나는 주말생활체육학교 운영」사업을 실시하고 있습니다.</p>
                 <span>21.03.22</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <div class="tab_title">「2021년 신나는 주말체육학교 운영」강사모집(남구)</div>
+                <div class="tab_title new">「2021년 신나는 주말체육학교 운영」강사모집(남구)</div>
                 <p>문화체육관광부와 대한체육회는 교육부, 남부교육지원청과 협력하여 토요 휴업일에 대한 학생들 의 스포츠․ 레져 활동 수요를 충족시키고, 청소년의 체력강화 및 건전한 여가 선용 지원을 위한 「신나는 주말생활체육학교 운영」사업을 실시하고 있습니다.</p>
                 <span>21.03.22</span>
               </a>
@@ -159,11 +248,10 @@
           </ul>
         </div>
         <div class="tab_item">
-          <!-- ul>li*3>div+p+p -->
           <ul>
             <li>
               <a href="#">
-                <div class="tab_title">올해 선수단 구성 완료한 대구스포츠단…오는 전국체전 대비한다</div>
+                <div class="tab_title new">올해 선수단 구성 완료한 대구스포츠단…오는 전국체전 대비한다</div>
                 <p> </p>
                 <span>21.03.19</span>
               </a>
@@ -185,7 +273,6 @@
           </ul>
         </div>
         <div class="tab_item">
-          <!-- ul>li*3>div+p+p -->
           <ul>
             <li>
               <a href="#">
@@ -213,110 +300,196 @@
       </div>
     </div>
   </section>
-  <section class="page3">
-    <div class="gallery_banner">
-      <div class="page_title">
+  <section id="page3">
+    <div class="banner gallery">
+      <div class="section_title">
         <h3 class="white">We Support<br>Sports Activities</h3>
         <p class="white">대구시민과 선수들에게<br>다양한 스포츠 활동을 지원합니다.</p>
         <a href="#" class="btn_basic">view more</a>
       </div>
     </div>
-    <div class="slide_gallery">
-      <div class="page_title">
+    <div class="content_area">
+      <div class="section_title">
         <h3>Gallery</h3>
         <h4>갤러리</h4>
         <p>대구광역시체육회 갤러리를 확인하세요</p>
       </div>
+      <div class="slide_wrap">
+        <ul>
+          <li class="slide_01"></li>
+          <li class="slide_01"></li>
+          <li class="slide_01"></li>
+          <li class="slide_01"></li>
+        </ul>
+        <div class="button_wrap">
+          <div class="slide_button prev"></div>
+          <div class="slide_button next"></div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="page5" style="display:none">
-    <div class="page5_wrap">
-      <div class="news_area">
-        <div class="page_title">
-          <h3>Location</h3>
-          <h4>찾아오시는 길</h4>
-          <p>대구광역시체육회 위치를 확인하세요.</p>
-        </div>
-        <ul class="link_area">
-      			<li>
-      				<a href="#">
-      					<img src="./img/img_location01.svg">
-      					<p>네이버지도</p>
-      				</a>
-      			</li>
-      			<li>
-              <a href="#">
-      					<img src="./img/img_location02.svg">
-      					<p>카카오지도</p>
-      				</a>
-      			</li>
-      			<li>
-              <a href="#">
-      					<img src="./img/img_location03.svg">
-      					<p>구글지도</p>
-      				</a>
-      			</li>
-      		</ul>
+  <section id="page4">
+    <div class="content_area right">
+      <div class="section_title">
+        <h3>Website</h3>
+        <h4>관련사이트</h4>
+        <p>대구광역시체육회 주요 관련사이트를 확인하세요</p>
       </div>
-      <div class="map_box">
+      <div class="webnsite_box">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner03.gif" alt="대구생활체육포털 로고">대구생활체육포털
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner02.gif" alt="성서국민체육센터 로고">성서국민체육센터
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner01.gif" alt="대구시체육회 스포츠인권센터 로고">대구시체육회 스포츠인권센터
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner04.gif" alt="청렴신문고 복지·보조금 부정신고센터 로고">청렴신문고 복지·보조금 부정신고센터
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner05.gif" alt="대구생활체육포털 로고">국민권익위원회 공익신고
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/website/img_banner06.gif" alt="스포츠윤리센터 로고">스포츠윤리센터
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner website">
+      <div class="section_title">
+        <h3 class="white">We Make<br>Better Sports<br>Cultures</h3>
+        <p class="white">건강한 스포츠문화를 만들어가겠습니다.</p>
+        <a href="#" class="btn_basic">view more</a>
+      </div>
+    </div>
+  </section>
+  <section id="page5">
+    <!-- <div id="page5_wrap"> -->
+    <div class="content_area right local">
+      <div class="section_title">
+        <h3>Location</h3>
+        <h4>찾아오시는 길</h4>
+        <p>대구광역시체육회 위치를 확인하세요.</p>
+      </div>
+      <ul class="link_area">
+          <li>
+            <a href="#">
+              <img src="./img/img_location01.svg" alt="네이버 지도">
+              <p>네이버지도</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/img_location02.svg" alt="카카오 지도">
+              <p>카카오지도</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/img_location03.svg" alt="구글 지도">
+              <p>구글지도</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <div class="banner local">
+      <!-- <div class="map_box"> -->
         <!-- <div class="bgi_box"></div> -->
       </div>
     </div>
+    <!-- </div> -->
   </section>
 </div>
-<!-- <div class="map_box"></div> -->
-<a href="#" id="btn_popup">
-  <p>팝업존 열기</p>
-  <span>OPEN</span>
-  <img src="./img/icon_open.svg">
-</a>
-
 <footer id=main_footer>
-  <div class="footer">
-    <div class="footer_wrap">
-      <h1><img src="./img/img_flogo.svg"></h1>
-      <ul class="flink">
-        <li><a href="#">체육회소개</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">관리자</a></li>
-      </ul>
-        <ul class="fitem">
-          <li>
-            <em>대구광역시체육회</em>
-          </li>
-          <li>
-            <em>주소</em>
-            <p>대구광역시 수성구 유니버시아드로42길 127</p>
-          </li>
-          <li>
-            <em>대표자</em>
-            <p>박영기</p>
-          </li>
-          <li>
-            <em>전화번호</em>
-            <p>053-600-0300</p>
-          </li>
-          <li>
-            <em>FAX</em>
-            <p>070-4275-1304</p>
-          </li>
-          <li>
-            <em>이메일</em>
-            <p>daegu@sports.or.kr</p>
-          </li>
-          <li>
-            <em>개인정보보호책임자</em>
-            <p>박영기</p>
-          </li>
-        </ul>
+  <div class="footer_wrap">
+    <h1><img src="./img/img_flogo.svg" alt="대구광역시체육회 로고"></h1>
+    <ul class="flink">
+      <li><a href="#">체육회소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">관리자</a></li>
+    </ul>
+    <ul class="flist">
+      <li>
+        대구광역시체육회
+      </li>
+      <li>
+        <span>주소</span>
+        <span><address>대구광역시 수성구 유니버시아드로42길 127</address></span>
+      </li>
+      <li>
+        <span>대표자</span>
+        <span>박영기</span>
+      </li>
+      <li>
+        <span>전화번호</span>
+        <span><a href="tel:053-600-0300">053-600-0300</a></span>
+      </li>
+      <li>
+        <span>FAX</span>
+        <span><a href="fax:070-4275-1304">070-4275-1304</a></span>
+      </li>
+      <li>
+        <span>이메일</span>
+        <span><a href="mailto:daegu@sports.or.kr">daegu@sports.or.kr</a></span>
+      </li>
+      <li>
+        <span>개인정보보호책임자</span>
+        <span>박영기</span>
+      </li>
+    </ul>
+    <p class="footer_copy">Copyright(C)DAEGUSPORTSCOUNCLE. All right reserved. Designed by KOWEB.</p>
+    <div class="f_select_box">
+      <div class="f_select_box_inner">
         <button type="button" class="f_select_btn">Family site</button>
-    </div>
-    <div class="footer_copy">
-      <p>Copyright(C)DAEGUSPORTSCOUNCLE. All right reserved. Designed by KOWEB.</p>
+        <div class="f_select_list">
+          <ul>
+            <li><a href="https://www.sports.or.kr" target="_top">대한체육회<img src="./img/img_blank.png" alt="새창"></a></li>
+            <li><a href="http://www.spsc.or.kr/" target="_top">성서국민체육센터<img src="./img/img_blank.png" alt="새창"></a></li>
+            <li><a href="https://www.clean.go.kr" target="_top">청렴신문고 복지보조금 부정신고센터<img src="./img/img_blank.png" alt="새창"></a></li>
+            <li><a href="https://www.acrc.go.kr" target="_top">국민권익위원회 공익신고<img src="./img/img_blank.png" alt="새창"></a></li>
+          </ul>
+        </div>
     </div>
   </div>
 </footer>
+<a href="#" id="btn_popup">
+  <p>팝업존 열기</p>
+  <span>OPEN</span>
+  <img src="./img/icon_open.svg" alt="팝업존 화살표">
+</a>
+<!-- <div class="scroll_path active"> -->
+<a href="#" class="btn_top">
+  <svg class="progress-circle" viewBox="-1 -1 102 102">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox -->
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+	</svg>
 
-  </body>
+
+<!-- 패스 기준에서 양쪽으로 늘어난다, 그래서 61픽셀 딱 맞추더라도 -2씩 해줘야 됨 -->
+<!-- 두께는 1px로 했는데 왜 두껍게 나오는지 모르겠음 -->
+    <!-- <svg class="progress-circle" viewBox="-2 -2 65 65">
+  	  <path d="M30.5,1C46.767,1,60,14.233,60,30.5S46.767,60,30.5,60S1,46.767,1,30.5S14.233,1,30.5,1 M30.5,0C13.655,0,0,13.655,0,30.5
+		C0,47.345,13.655,61,30.5,61C47.345,61,61,47.345,61,30.5C61,13.655,47.345,0,30.5,0L30.5,0z"/></path>
+    </svg> -->
+
+
+	</a>
+<!-- </div> -->
+</body>
 </html>
