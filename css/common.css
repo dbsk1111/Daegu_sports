@@ -499,7 +499,7 @@ body{
   margin-top: 22px;
   font-size: 14px;
 }
-.flist li{
+.flist li, .flist address{
   overflow: hidden;
   float: left;
   margin-right: 30px;
