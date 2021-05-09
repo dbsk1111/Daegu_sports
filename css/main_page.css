@@ -128,7 +128,8 @@ section{
 #page1 h2{
   font-size: 65px;
 }
-#page1 h2 p{
+#page1 h2 span{
+  display: block;
   margin-bottom: 25px;
   font-size: 19px;
   font-weight: 400;
