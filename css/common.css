@@ -490,7 +490,7 @@ body{
 .flink li:last-child a{
   color: #fff;
   background: #00974a;
-  border-color: #00974a;
+  border-color: transparent;
 }
 
 .flist{
