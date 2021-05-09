@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 텝 메뉴 */
+.tab_menu{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 170px;
+}
+.tab_menu_wrap{
+  display: flex;
+  background: #fff;
+  border-radius: 100px;
+}
+.tab_menu span{
+  position: relative;
+  display: inline-block;
+  padding: 16px 20px;
+  line-height: 1.7;
+  color: #b7b0b0;
+  font-size: 18px;
+}
+.tab_menu span.on{
+  color: #222;
+  font-weight: 700;
+}
+.tab_menu span:first-child{
+  padding-left: 30px;
+}
+.tab_menu span:last-child{
+  padding-right: 30px;
+}
+.tab_menu span:not(:first-child):before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 24px;
+  transform: translate(calc( -50% + 0.5px), calc( -50% + 0.5px));
+  background: #ccc;
+}
+@media all and ( max-width: 1024px ){
+  .tab_menu {
+    margin-bottom: 110px;
+  }
+  .tab_menu span{
+    font-size: 15px;
+  }
+}
+@media all and ( max-width: 768px ){
+  .tab_menu span{
+    font-size: 13px;
+  }
+  .tab_menu{
+    margin-bottom: 40px;
+  }
+}

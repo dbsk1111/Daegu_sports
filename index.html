@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" name="news" content="대구광역시체육회 소식">
   <title>대구광역시체육회</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <!-- <link rel="stylesheet" href="./css/initial.css"> -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main_page.css">
   <link rel="shortcut icon" href="./img/favicon.ico"/>
   <script type="text/javascript" src="./js/jquery-3.6.0.slim.min.js"></script>
-  <script type="text/javascript" defer src="./js/scroll.js"></script>
+  <script type="text/javascript" defer src="./js/common.js"></script>
+  <script type="text/javascript" defer src="./js/main_scroll.js"></script>
 </head>
 <body>
-<div class="fullpage">
   <header id="header">
     <h1>
       <a href="http://www.daegusports.or.kr/">대구광역시체육회</a>
@@ -25,26 +26,26 @@
     <nav id="gnb">
       <ul>
         <li>
-          <a href="#">알림</a>
+          <a href="notice.html">알림</a>
           <ul class="sub_menu">
-            <li><a href="#">공지</a></li>
+            <li><a href="notice.html">공지</a></li>
             <li><a href="#">공고</a></li>
             <li><a href="#">경영공시/규정</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">소개</a>
+          <a href="about.html">소개</a>
           <ul class="sub_menu">
-            <li><a href="#">대구광역시체육회</a></li>
-            <li><a href="#">스포츠과학센터</a></li>
+            <li><a href="about.html">대구광역시체육회</a></li>
+            <li><a href="sports_science_center.html">스포츠과학센터</a></li>
             <li><a href="#">대구체육단체</a></li>
             <li><a href="#">구군/종목단체 소식</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">커뮤니티</a>
+          <a href="gallery.html">커뮤니티</a>
           <ul class="sub_menu">
-            <li><a href="#">갤러리</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
             <li><a href="#">보도자료</a></li>
             <li><a href="#">자료실</a></li>
           </ul>
@@ -71,26 +72,26 @@
         <nav class="all_menu_gnb">
           <ul>
             <li>
-              <a href="#">알림</a>
+              <a href="notice.html">알림</a>
               <ul class="sub_menu">
-                <li><a href="#">공지</a></li>
+                <li><a href="notice.html">공지</a></li>
                 <li><a href="#">공고</a></li>
                 <li><a href="#">경영공시/규정</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">소개</a>
+              <a href="about.html">소개</a>
               <ul class="sub_menu">
-                <li><a href="#">대구광역시체육회</a></li>
-                <li><a href="#">스포츠과학센터</a></li>
+                <li><a href="about.html">대구광역시체육회</a></li>
+                <li><a href="sports_science_center.html">스포츠과학센터</a></li>
                 <li><a href="#">대구체육단체</a></li>
                 <li><a href="#">구군/종목단체 소식</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">커뮤니티</a>
+              <a href="gallery.html">커뮤니티</a>
               <ul class="sub_menu">
-                <li><a href="#">갤러리</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
                 <li><a href="#">보도자료</a></li>
                 <li><a href="#">자료실</a></li>
               </ul>
@@ -120,22 +121,28 @@
   				</li>
   			</ul>
       </div>
-      <div class="img_area">
+      <div class="gallery_img_area">
         <div class="building_img">
-          <div class="building_img_area"></div>
+          <!-- <div class="building_img_area"></div> -->
         </div>
         <div class="map_img"></div>
       </div>
     </div>
   </header>
+<div class="fullpage">
+  <a href="#" id="btn_popup">
+    <p>팝업존 열기</p>
+    <span>OPEN</span>
+    <img src="./img/icon_open.svg" alt="팝업존 화살표">
+  </a>
   <input type="checkbox" id="toggle">
   <div id="lnb">
     <ul class="lnb_bar">
-      <li><a href="#page1" class="section_name active_section">MAIN</a></li>
-      <li><a href="#page2" class="section_name">NEWS</a></li>
-      <li><a href="#page3" class="section_name">GALLERY</a></li>
-      <li><a href="#page4" class="section_name">WEBSITE</a></li>
-      <li><a href="#page5" class="section_name">MAP</a></li>
+      <li><a href="#page1" class="section_name active_section dark">MAIN</a></li>
+      <li><a href="#page2" class="section_name dark">NEWS</a></li>
+      <li><a href="#page3" class="section_name dark">GALLERY</a></li>
+      <li><a href="#page4" class="section_name dark">WEBSITE</a></li>
+      <li><a href="#page5" class="section_name dark">MAP</a></li>
     </ul>
   </div>
   <!-- <div id="lnb">
@@ -320,13 +327,14 @@
       <div class="slide_wrap">
         <ul>
           <li class="slide_01"></li>
+          <li class="slide_02"></li>
+          <li class="slide_03"></li>
           <li class="slide_01"></li>
+          <li class="slide_02"></li>
+          <li class="slide_03"></li>
           <li class="slide_01"></li>
-          <li class="slide_01"></li>
-          <li class="slide_01"></li>
-          <li class="slide_01"></li>
-          <li class="slide_01"></li>
-          <li class="slide_01"></li>
+          <li class="slide_02"></li>
+          <li class="slide_03"></li>
         </ul>
         <div class="button_wrap">
           <div class="slide_button prev"></div>
@@ -435,7 +443,7 @@
     <!-- </div> -->
   </section>
 </div>
-<footer id=main_footer>
+<footer id="main_footer">
   <div class="footer_wrap">
     <h1><img src="./img/img_flogo.svg" alt="대구광역시체육회 로고"></h1>
     <ul class="flink">
@@ -488,29 +496,20 @@
     </div>
   </div>
   <p class="footer_copy">Copyright(C)DAEGUSPORTSCOUNCLE. All right reserved. Designed by KOWEB.</p>
+  <!-- <div class="btn_top_wrap"> -->
+  <a href="#" class="btn_top">
+    <svg class="progress-circle" viewBox="-1 -1 102 102">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox -->
+  		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+  	</svg>
+  <!-- 패스 기준에서 양쪽으로 늘어난다, 그래서 61픽셀 딱 맞추더라도 -2씩 해줘야 됨 -->
+  <!-- 두께는 1px로 했는데 왜 두껍게 나오는지 모르겠음 -->
+      <!-- <svg class="progress-circle" viewBox="-2 -2 65 65">
+    	  <path d="M30.5,1C46.767,1,60,14.233,60,30.5S46.767,60,30.5,60S1,46.767,1,30.5S14.233,1,30.5,1 M30.5,0C13.655,0,0,13.655,0,30.5
+  		C0,47.345,13.655,61,30.5,61C47.345,61,61,47.345,61,30.5C61,13.655,47.345,0,30.5,0L30.5,0z"/></path>
+      </svg> -->
+  </a>
+  <!-- </div> -->
 </footer>
-<a href="#" id="btn_popup">
-  <p>팝업존 열기</p>
-  <span>OPEN</span>
-  <img src="./img/icon_open.svg" alt="팝업존 화살표">
-</a>
-<!-- <div class="scroll_path active"> -->
-<a href="#" class="btn_top">
-  <svg class="progress-circle" viewBox="-1 -1 102 102">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox -->
-		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-	</svg>
-
-
-<!-- 패스 기준에서 양쪽으로 늘어난다, 그래서 61픽셀 딱 맞추더라도 -2씩 해줘야 됨 -->
-<!-- 두께는 1px로 했는데 왜 두껍게 나오는지 모르겠음 -->
-    <!-- <svg class="progress-circle" viewBox="-2 -2 65 65">
-  	  <path d="M30.5,1C46.767,1,60,14.233,60,30.5S46.767,60,30.5,60S1,46.767,1,30.5S14.233,1,30.5,1 M30.5,0C13.655,0,0,13.655,0,30.5
-		C0,47.345,13.655,61,30.5,61C47.345,61,61,47.345,61,30.5C61,13.655,47.345,0,30.5,0L30.5,0z"/></path>
-    </svg> -->
-
-
-	</a>
-<!-- </div> -->
 </body>
 </html>

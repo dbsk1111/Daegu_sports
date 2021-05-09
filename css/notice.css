@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 섹션 타이틀 배너 */
+.section_title{
+  background-image: url('../img/img_visual01.jpg');
+}
+/* 컨텐츠 */
+/* 게시판 */
+.bbs{
+  border-top: 2px solid #505c78;
+}
+.bbs li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  min-height: 98px;
+  border-bottom: 1px solid #eaecf1;
+  box-sizing: border-box;
+}
+.date, .subject, .more_btn{
+  /* float: left; */
+  position: relative;
+  display: inline-block;
+  /* top: 50%;
+  transform: translateY( -50% ); */
+}
+.date{
+  position: relative;
+  padding-right: 15px;
+  width: 80px;
+  color: #999;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+}
+.date:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 1px;
+  height: 30px;
+  background: #e5e5e5;
+  transform: translateY( -50% );
+}
+.date p{
+  display: block;
+  line-height: 1.3;
+  font-size: 30px;
+  color: #444;
+}
+.subject{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 30px;
+  padding: 30px 55px 30px 0;
+  /* line-height: 38px; */
+  /* top: calc( 50% - 2px ); */
+  letter-spacing: -1px;
+  transition: color .3s;
+}
+.subject:hover{
+  color: #f15b6d;
+}
+.subject:hover .more_btn{
+  width: 110px;
+  color: #f15b6d;
+  border-color: #f15b6d;
+}
+.subject:hover .more_btn{
+  text-indent: 0;
+}
+.subject:hover .more_btn:after{
+  background-position: 0 -14px;
+}
+
+.more_btn{
+  overflow: hidden;
+  position: absolute;
+  padding-left: 10px;
+  top: 50%;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 13px;
+  text-indent: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transform: translateY( -50% );
+  transition: .3s;
+}
+.more_btn:before{
+  content: '자세히 보기';
+  position: absolute;
+  display: none;
+  margin-left: 10px;
+  top: calc( 50% + 1px );
+  left: 0;
+  width: 110px;
+  color: #f15b6d;
+  font-size: 13px;
+  transform: translateY( -50% );
+}
+.more_btn:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  background: url('../img/icon_more.png') no-repeat 0 0;
+  transform: translateY( -50% );
+}
+@media all and ( max-width: 768px ){
+  .subject{
+    margin-left: 20px;
+  }
+}
+@media all and ( max-width: 340px ){
+  .subject{
+    padding-right: 15px;
+  }
+  .more_btn {
+    display: none;
+  }
+}

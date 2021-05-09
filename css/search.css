@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* 검색 */
+.search_group{
+  margin-top: 20px;
+}
+.search_group *{
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#search_option{
+  padding: 0 30px 0 8px;
+  color: #444;
+  font-family: 'Play', 'Noto Sans KR', Sans-serif;
+  background: url('../img/select_arrow.svg') no-repeat calc(100% - 10px) 50% / 7px 7px;
+  border: 1px solid #ddd;
+  /* -webkit-border-radius: 1px;
+  -webkit-appearance: none; */
+  appearance: none;
+}
+.search_group input{
+  width: 200px;
+  padding: 7px 8px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+.search_group button{
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+  background: #41464e;
+  border: 1px solid #25282d;
+  transition: .3s ease-out;
+}
+.search_group button:hover{
+  opacity: .8;
+}
+.pagination{
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+  border-top: 1px dashed #dadada;
+}
+.pagination li{
+  display: inline-block;
+  vertical-align: top;
+}
+.pagination a{
+  display: inline-block;
+  min-width: 38px;
+  height: 38px;
+  line-height: 38px;
+  color: #444;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: border-color .3s;
+}
+.pagination a:not([class$='_btn']):hover{
+  background-color: #f3f6fd;
+  border-color: #bdc7e0;
+}
+
+.pagination .first_btn, .pagination .prev_btn, .pagination .next_btn, .pagination .last_btn{
+  background: url('../img/btn_pagination.png') no-repeat;
+}
+.pagination .first_btn{
+  background-position: -1px -1px;
+}
+.pagination .first_btn:hover{
+  background-position: -1px -39px;
+}
+.pagination .prev_btn{
+  background-position: -39px -1px;
+}
+.pagination .prev_btn:hover{
+  background-position: -39px -39px;
+}
+.pagination .next_btn{
+  background-position: -77px -1px;
+}
+.pagination .next_btn:hover{
+  background-position: -77px -39px;
+}
+.pagination .last_btn{
+  background-position: -115px -1px;
+}
+.pagination .last_btn:hover{
+  background-position: -115px -39px;
+}

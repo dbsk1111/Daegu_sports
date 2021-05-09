@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* 섹션 타이틀 배너 */
+.section_title{
+  background-image: url('../img/img_visual02.jpg');
+}
+/* 컨텐츠 */
+.content_wrap{
+  width: auto;
+  padding-bottom: 0;
+}
+/* 텝 메뉴 */
+.tab_menu_wrap{
+  background: #f7f7f7;
+}
+/* 탭 메뉴 1 */
+.tab_content_01 *{
+  box-sizing: border-box;
+}
+.tab_content_01{
+  overflow: hidden;
+}
+/* 소개글 */
+.introduce{
+  overflow: hidden;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
+}
+.introduce_01, .introduce_02{
+  float: left;
+  width: 100%;
+}
+.introduce_01 .introduce_img{
+   float: right;
+}
+.introduce_01 .introduce_txt{
+  float: left;
+  margin-top: 130px;
+}
+.introduce_img img{
+  width: 100%;
+  vertical-align: top;
+}
+.introduce_txt strong{
+  display: block;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  color: #222;
+  font-size: 35px;
+  font-weight: 700;
+}
+.introduce_txt p{
+  line-height: 1.7;
+  color: #666;
+  font-size: 16px;
+  font-weight: 300;
+}
+.introduce_02{
+  margin-bottom: -220px;
+}
+.introduce_02 .introduce_img{
+  float: left;
+  position: relative;
+  top: -220px;
+}
+.introduce_02 .introduce_txt{
+  float: left;
+  margin: 80px 0 0 50px;
+}
+
+/* 지원 */
+.support{
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  background: url('../img/sports_science_center/img_about020103bg.jpg') no-repeat 50% 50% / cover;
+  line-height: 1.7;
+}
+.window{
+  display: block;
+  margin: 0 auto;
+}
+.mobile{
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 767px;
+}
+.support ul{
+  position: absolute;
+  top: 0;
+}
+.support strong{
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+}
+.support strong:before{
+  content: '';
+  position: absolute;
+  top: -30px;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 100%;
+}
+.list_left strong:before{
+  right: -150px;
+}
+.support strong:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+}
+.list_left{
+  right: calc( 50% + 210px );
+  width: 50%;
+  text-align: right;
+}
+.support .list_left strong:after{
+  right: -125px;
+}
+.list_left li:nth-child(1){
+  margin-top: 170px;
+}
+.list_left li:nth-child(1) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon01.svg');
+}
+.list_left li:nth-child(2){
+  margin-top: 130px;
+  margin-right: 150px;
+}
+.list_left li:nth-child(2) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon02.svg');
+}
+.list_left li:nth-child(3){
+  margin-top: 130px;
+  margin-right: 220px;
+}
+.list_left li:nth-child(3) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon03.svg');
+}
+.list_right{
+  left: calc( 50% + 380px );
+  width: 50%;
+  text-align: left;
+}
+.list_right strong:before{
+  left: -150px;
+}
+.list_right strong:after{
+  left: -125px;
+}
+.list_right li:nth-child(1){
+  margin-top: 175px;
+}
+.list_right li:nth-child(1) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon04.svg');
+}
+.list_right li:nth-child(2){
+  margin-top: 130px;
+  margin-left: 45px;
+}
+.list_right li:nth-child(2) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon05.svg');
+}
+.list_right li:nth-child(3){
+  margin-top: 130px;
+  margin-left: -12px;
+}
+.list_right li:nth-child(3) strong:after{
+  background-image: url('../img/sports_science_center/img_about02_icon06.svg');
+}
+
+@media all and ( max-width: 1650px ){
+  .window{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .list_left, .list_right{
+    margin-top: 150px;
+    width: 35%;
+  }
+  .list_left{
+    left: 3%;
+    text-align: left;
+  }
+  .list_right{
+    left: auto;
+    right: 2%;
+  }
+  .list_left strong:before, .list_right strong:before{
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 80px;
+  }
+  .list_left strong:after, .list_right strong:after{
+    top: 10px;
+    left: -90px;
+    width: 60px;
+    height: 60px;
+  }
+  .tab_content_01 .support li{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-left: 100px;
+  }
+  .support li:not(:first-child){
+    border-top: 1px dashed rgba(255,255,255,0.2);
+  }
+  .support strong{
+    font-size: 20px;
+  }
+}
+
+@media all and ( max-width: 1280px ){
+  .introduce_img{
+    width: 47%;
+  }
+  .introduce_txt{
+    width: 45%;
+  }
+  .introduce_txt strong{
+    line-height: 1.5;
+    font-size: 30px;
+  }
+  .introduce_txt p{
+    font-size: 15px;
+  }
+  .introduce_02{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .introduce_02 .introduce_img{
+    top: 0;
+  }
+  .support strong{
+    font-size: 18px;
+  }
+  .support p{
+    font-size: 15px;
+  }
+}
+@media all and ( max-width: 1024px ){
+  .introduce_txt strong{
+    font-size: 25px;
+  }
+  .introduce_txt p{
+    font-size: 15px;
+  }
+  .introduce_02{
+    margin-bottom: 0;
+  }
+  .support{
+    padding-bottom: 80px;
+    background-size: auto 720px;
+    background-position: 50% 0;
+  }
+  .support strong{
+    color: #222;
+  }
+  .support p{
+    color: #666;
+  }
+  .support ul{
+    position: relative;
+    margin: 0 auto;
+  }
+  .list_left, .list_right {
+    margin-top: 0;
+    width: 94%;
+    left: 3%;
+  }
+  .list_left strong:before, .list_right strong:before {
+    background-color: rgba(0,0,0,0.05);
+  }
+  .tab_content_01 .support li{
+    margin-top: 23px;
+  }
+  .support li:not(:first-child), .list_right li:nth-child(1){
+    border-top: 1px solid #eee;
+  }
+  .list_left li:nth-child(1) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon01_on.svg');
+  }
+  .list_left li:nth-child(2) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon02_on.svg');
+  }
+  .list_left li:nth-child(3) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon03_on.svg');
+  }
+  .list_right li:nth-child(1) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon04_on.svg');
+  }
+  .list_right li:nth-child(2) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon05_on.svg');
+  }
+  .list_right li:nth-child(3) strong:after{
+    background-image: url('../img/sports_science_center/img_about02_icon06_on.svg');
+  }
+}
+
+@media all and ( max-width: 768px ){
+  .support {
+    background: none;
+  }
+  .introduce_img, .introduce_txt{
+    width: 100%
+  }
+  .introduce_01 .introduce_txt, .introduce_02 .introduce_txt{
+    margin: 25px 0 0 0;
+  }
+  .introduce_txt strong{
+    font-size: 20px;
+  }
+  .introduce_txt p{
+    font-size: 14px;
+  }
+}
