@@ -17,7 +17,13 @@
   top: 50%;
   left: 4.16%;
   z-index: 1;
+  opacity: 1;
+  visibility: visible;
   transition: opacity .2s;
+}
+#lnb.hide{
+  opacity: 0;
+  visibility: hidden;
 }
 #lnb li:not(:first-child){
   position: relative;
@@ -33,13 +39,23 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 20px;
-  background: rgba(255,255,255,0);
-  box-shadow: 0 0 1px rgba(0,0,0,0);
   border-radius: 20px;
+  background-color: rgba(255,255,255,0);
+  box-shadow: 0 0 1px rgba(0,0,0,0.0);
+  border: 1px solid transparent;
   opacity: 1;
   transition: background .2s, box-shadow .2s;
   text-decoration: none;
 }
+
+.section_name.on{
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  border-color: #f1f1f1;
+}
+
+
+
 .active_section:before{
   content: '';
   position: absolute;

@@ -6,16 +6,14 @@ $(function(){
     let wHeight = $(this).height();
     let documentBottom = dHeight - (thisScrollTop + wHeight);
     if( thisScrollTop > 0 && documentBottom > 50 ){
-      $('.section_name').css({'background':'rgba(255,255,255,1)','box-shadow':'0 0 1px rgba(0,0,0,0.2)'})
-      $('#lnb, .active_section:before').css('opacity','1')
-      $('#lnb, .active_section:before').css('visibility','visible')
+      $('.section_name').addClass('on')
       $('#header').addClass('on')
+      $('#lnb').removeClass('hide')
     }else if( thisScrollTop == 0){
-      $('.section_name').css({'background':'rgba(255,255,255,0)','box-shadow':'0 0 1px rgba(0,0,0,0)'})
+      $('.section_name').removeClass('on')
       $('#header').removeClass('on')
     }else if( thisScrollTop > 0 && documentBottom < 50 ){
-      $('#lnb, .active_section:before').css('opacity','0')
-      $('#lnb, .active_section:before').css('visibility','hidden')
+      $('#lnb').addClass('hide')
     }
     // lnb 활성화
     $('section').each(function(){
