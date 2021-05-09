@@ -279,7 +279,7 @@ input{ display: none; }
   font-weight: 300;
   height: 48px;
   word-wrap: break-word;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   /* -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; */
   overflow: hidden;

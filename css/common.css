@@ -590,9 +590,9 @@ address{
   z-index: 0;
   /* -ms-overflow-style: normal; */
 }
-.f_select_list::-webkit-scrollbar{
+/* .f_select_list::-webkit-scrollbar{ */
   /* display: inline-block; */
-}
+/* } */
 .f_select_btn.on ~ .f_select_list{
   top: -155px;
 }
