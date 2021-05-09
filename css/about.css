@@ -93,7 +93,7 @@ h6{
   display: inline-block;
   margin-right: 12px;
 }
-.history_list li:first{
+.history_list.list_bg li:first-child p{
   color: #444;
 }
 .list_bg li:nth-child(2n){
