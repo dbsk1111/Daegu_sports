@@ -241,7 +241,7 @@ input{ display: none; }
   width: 100%;
   /* width: calc( 100% / 3 - 34px ); */
   background: #f9f9f9;
-  border: 1px solid #f9f9f9;
+  border: 1px solid transparent;
   box-sizing: border-box;
   /* 크기를 width height로 지정하지 않을 경우 크기에 영향을 준다 */
   text-decoration: none;
