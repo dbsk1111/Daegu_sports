@@ -12,6 +12,24 @@ $(function(){
     return false;
   })
 
+  // 모든 메뉴의 서브 메뉴 show/hide
+  $('.all_menu_gnb > ul > li').click(function(){
+    if( $(window).width() <= 500 ){
+      let menuHeight = $(this).find('.sub_menu');
+      let listLeng = parseInt(menuHeight.find('li').length);
+      let listHeight = parseInt(menuHeight.find('li').css('height'));
+
+      if( !$(this).hasClass('on') ){
+        menuHeight.css('height', listLeng*listHeight )
+        $(this).addClass('on')
+      }else{
+        $(this).removeClass('on')
+        menuHeight.css('height',0)
+      }
+    }
+    return false;
+  })
+
   // 푸터 셀렉트 박스
   let select_on = 0;
   $('.f_select_btn').click(function(){
@@ -23,8 +41,6 @@ $(function(){
       select_on = 0;
     }
   })
-
-
 
   $(window).scroll(function(){
     // gnb lnb 변화

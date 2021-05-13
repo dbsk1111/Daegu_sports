@@ -74,15 +74,32 @@
 .txt_area_02 span:last-child{
   float: right;
 }
-
-.gallery_bbs li:nth-child(3n+1) i{
+.gallery_bbs li:nth-child(1) i{
   background-image: url('../img/gallery/gallery01.jpg')
 }
-.gallery_bbs li:nth-child(3n+2) i{
+.gallery_bbs li:nth-child(2) i{
   background-image: url('../img/gallery/gallery02.jpg')
 }
-.gallery_bbs li:nth-child(3n+3) i{
+.gallery_bbs li:nth-child(3) i{
   background-image: url('../img/gallery/gallery03.jpg')
+}
+.gallery_bbs li:nth-child(4) i{
+  background-image: url('../img/gallery/gallery04.jpg')
+}
+.gallery_bbs li:nth-child(5) i{
+  background-image: url('../img/gallery/gallery05.jpg')
+}
+.gallery_bbs li:nth-child(6) i{
+  background-image: url('../img/gallery/gallery06.jpg')
+}
+.gallery_bbs li:nth-child(7) i{
+  background-image: url('../img/gallery/gallery07.jpg')
+}
+.gallery_bbs li:nth-child(8) i{
+  background-image: url('../img/gallery/gallery08.jpg')
+}
+.gallery_bbs li:nth-child(9) i{
+  background-image: url('../img/gallery/gallery09.jpg')
 }
 
 @media all and ( max-width: 640px ){
