@@ -347,10 +347,10 @@ body{
   letter-spacing: -0.02em;
 }
 .all_menu .all_menu_gnb li .sub_menu{
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
   margin-top: 20px;
-  height: 0;
-  transition: all 1s;
+  /* transition: all 1s; */
 }
 .all_menu .all_menu_gnb .sub_menu a{
   display: block;
@@ -819,6 +819,11 @@ address{
   .all_menu .all_menu_gnb > ul > li:nth-child(1),.all_menu .all_menu_gnb > ul > li:nth-child(2){
     margin-bottom: 20px;
   }
+  .sub_menu{
+    height: auto;
+    /* display: block; */
+    /* 111111111111111111111 */
+  }
   .btn_menu{
     top: -13px;
     padding: 0;
@@ -841,6 +846,11 @@ address{
   }
   .btn_menu.on span:nth-of-type(1), .btn_menu.on span:nth-of-type(3){
     top: 6px;
+  }
+  .all_menu .all_menu_gnb li .sub_menu{
+    /* overflow: visible; */
+    height: auto;
+    margin-top: 20px;
   }
 }
 
@@ -882,7 +892,7 @@ address{
     transition: all 0.3s ease 0s;
   }
   .all_menu .all_menu_gnb li .sub_menu{
-    height: 0;
+    /* height: 0; */
     margin-top: 0;
   }
   .all_menu .all_menu_gnb li.on .sub_menu{
@@ -891,8 +901,7 @@ address{
   .all_menu .all_menu_gnb li.on > a, .all_menu .all_menu_gnb li a:hover{
     color: #00974a;
   }
-
-  .all_menu_info{
+  .all_menu .all_menu_gnb li .sub_menu, .all_menu_info{
     display: none;
   }
 }
