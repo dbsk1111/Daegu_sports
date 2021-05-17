@@ -38,17 +38,19 @@ $(function(){
   // })
   $(window).resize(function(){
     if( $(window).width() > 500 ){
-      $('.all_menu_gnb > ul > li > ul').css('display', 'block')
+      $('.all_sub_menu').css('display', 'block')
     }else{
-      $('.all_menu_gnb > ul > li > ul').css('display', 'none')
+      $('.all_sub_menu').css('display', 'none')
     }
   })
   $('.all_menu_gnb > ul > li > a').click(function(){
     if( $(window).width() <= 500 ){
       if( $('+ul',this).css('display') !== 'none' ){
         $('+ul',this).slideUp('slow')
+        $(this).removeClass('on')
       }else if( $('+ul',this).css('display') == 'none' ){
         $('+ul',this).slideDown('slow')
+        $(this).addClass('on')
       }
     }
     return false;

@@ -363,7 +363,7 @@ h2, h3{ line-height: 1.5; }
   background-position: -115px -39px;
 }
 
-@media all and ( max-width: 1280px ){
+@media screen and ( max-width: 1280px ){
   .lnb_wrap{
     flex-grow: 1;
   }
@@ -388,7 +388,7 @@ h2, h3{ line-height: 1.5; }
     font-size: 15px;
   }
 }
-@media all and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ){
   .lnb{
     height: 70px;
   }
@@ -410,7 +410,7 @@ h2, h3{ line-height: 1.5; }
     bottom: 62px;
   }
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   .section_title{
     height: 405px;
     text-align: center;
@@ -457,7 +457,7 @@ h2, h3{ line-height: 1.5; }
     margin-left: 20px;
   }
 }
-@media all and ( max-width: 340px ){
+@media screen and ( max-width: 340px ){
   .subject{
 
     padding-right: 15px;

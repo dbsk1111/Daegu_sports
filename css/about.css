@@ -149,7 +149,7 @@ h6{
   border-top: 1px dashed #ddd;
 }
 
-@media all and ( max-width: 1280px ){
+@media screen and ( max-width: 1280px ){
   .content{
     background-position: 50% -60px;
   }
@@ -186,7 +186,7 @@ h6{
     padding: 14px 14px 14px 20px;
   }
 }
-@media all and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ){
   h6{
     font-size: 25px;
   }
@@ -215,7 +215,7 @@ h6{
     margin-top: 10px;
   }
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   .content{
     background-position: 50% -40px;
   }

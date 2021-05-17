@@ -102,7 +102,7 @@
   background-image: url('../img/gallery/gallery09.jpg')
 }
 
-@media all and ( max-width: 640px ){
+@media screen and ( max-width: 640px ){
   .gallery_bbs li{
     width: 49%;
   }

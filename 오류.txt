@@ -1,0 +1,1 @@
+Uncaught TypeError: $(...).slideUp is not a function

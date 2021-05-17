@@ -167,7 +167,7 @@ h2, h3{ line-height: 1.5; }
 }
 
 
-@media all and ( max-width: 1280px ){
+@media screen and ( max-width: 1280px ){
   .lnb_wrap{
     flex-grow: 1;
   }
@@ -192,7 +192,7 @@ h2, h3{ line-height: 1.5; }
     font-size: 15px;
   }
 }
-@media all and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ){
   .lnb{
     height: 70px;
   }
@@ -214,7 +214,7 @@ h2, h3{ line-height: 1.5; }
     bottom: 62px;
   }
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   .section_title{
     height: 405px;
     text-align: center;
@@ -267,7 +267,7 @@ h2, h3{ line-height: 1.5; }
     display: none;
   }
 }
-@media all and ( max-width: 500px ){
+@media screen and ( max-width: 500px ){
   .lnb_menu ul{
     justify-content: flex-start;
     overflow-x: scroll;

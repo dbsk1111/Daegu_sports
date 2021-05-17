@@ -116,12 +116,12 @@
   background: url('../img/icon_more.png') no-repeat 0 0;
   transform: translateY( -50% );
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   .subject{
     margin-left: 20px;
   }
 }
-@media all and ( max-width: 340px ){
+@media screen and ( max-width: 340px ){
   .subject{
     padding-right: 15px;
   }

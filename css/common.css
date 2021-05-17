@@ -346,13 +346,13 @@ body{
   font-weight: 800;
   letter-spacing: -0.02em;
 }
-.all_menu .all_menu_gnb li .sub_menu{
+.all_sub_menu{
   /* overflow: hidden; */
   position: relative;
   margin-top: 20px;
   /* transition: all 1s; */
 }
-.all_menu .all_menu_gnb .sub_menu a{
+.all_sub_menu a{
   display: block;
   padding: 6px 0;
   color: #666;
@@ -679,7 +679,7 @@ address{
 } */
 
 /* commont */
-@media all and ( max-width: 1650px ){
+@media screen and ( max-width: 1650px ){
   #header h1 {
     top: -12px;
     left: 50px;
@@ -696,7 +696,7 @@ address{
   }
 }
 /* main_page */
-@media all and ( max-width: 1580px ){
+@media screen and ( max-width: 1580px ){
   .footer_wrap{
     /* width: 1220px; */
     width: auto;
@@ -706,7 +706,7 @@ address{
     right: 30px;
   }
 }
-@media all and ( max-width: 1280px ){
+@media screen and ( max-width: 1280px ){
   .img_area{
     width: 0%;
   }
@@ -730,7 +730,7 @@ address{
   }
 }
 
-@media all and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ){
   #btn_popup{
     display: none;
   }
@@ -783,7 +783,7 @@ address{
     padding: 6px 20px;
   }
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   #header{
     margin-top: 23px;
   }
@@ -819,7 +819,7 @@ address{
   .all_menu .all_menu_gnb > ul > li:nth-child(1),.all_menu .all_menu_gnb > ul > li:nth-child(2){
     margin-bottom: 20px;
   }
-  .sub_menu{
+  .all_sub_menu{
     height: auto;
     /* display: block; */
     /* 111111111111111111111 */
@@ -847,7 +847,7 @@ address{
   .btn_menu.on span:nth-of-type(1), .btn_menu.on span:nth-of-type(3){
     top: 6px;
   }
-  .all_menu .all_menu_gnb li .sub_menu{
+  .all_sub_menu{
     /* overflow: visible; */
     height: auto;
     margin-top: 20px;
@@ -855,7 +855,7 @@ address{
 }
 
 /* 모바일 배경화면 넣고 배열 바꾸기 */
-@media all and ( max-width: 500px ){
+@media screen and ( max-width: 500px ){
   .menu_area{
     align-items: flex-start;
   }
@@ -891,21 +891,21 @@ address{
     font-weight: 300;
     transition: all 0.3s ease 0s;
   }
-  .all_menu .all_menu_gnb li .sub_menu{
+  .all_sub_menu{
     /* height: 0; */
     margin-top: 0;
   }
-  .all_menu .all_menu_gnb li.on .sub_menu{
+  .all_menu_gnb li.on .all_sub_menu{
     display: block;
   }
-  .all_menu .all_menu_gnb li.on > a, .all_menu .all_menu_gnb li a:hover{
+  .all_menu_gnb li a.on, .all_menu_gnb li a:hover{
     color: #00974a;
   }
-  .all_menu .all_menu_gnb li .sub_menu, .all_menu_info{
+  .all_sub_menu, .all_menu_info{
     display: none;
   }
 }
-@media all and ( max-width: 360px ){
+@media screen and ( max-width: 360px ){
   .login_menu{
     display: none;
   }

@@ -38,7 +38,7 @@
   transform: translate(calc( -50% + 0.5px), calc( -50% + 0.5px));
   background: #ccc;
 }
-@media all and ( max-width: 1024px ){
+@media screen and ( max-width: 1024px ){
   .tab_menu {
     margin-bottom: 110px;
   }
@@ -46,7 +46,7 @@
     font-size: 15px;
   }
 }
-@media all and ( max-width: 768px ){
+@media screen and ( max-width: 768px ){
   .tab_menu span{
     font-size: 13px;
   }
