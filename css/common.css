@@ -621,6 +621,11 @@ address{
   width: 16px;
   height: 16px;
 }
+
+.footer_copy br{
+  display: none;
+}
+
 /* 탑 버튼 */
 .btn_top{
   position: fixed;
@@ -772,15 +777,17 @@ address{
   .footer_copy{
     font-size: 12px;
   }
-
+  .f_select_list a{
+    padding: 6px 20px;
+  }
   .btn_top{
     right: 15px;
-    bottom: 30px;
+    bottom: 5px;
     width: 50px;
     height: 50px;
   }
-  .f_select_list a{
-    padding: 6px 20px;
+  .btn_top.on{
+    bottom: 15px;
   }
 }
 @media screen and ( max-width: 768px ){
@@ -903,6 +910,9 @@ address{
   }
   .all_sub_menu, .all_menu_info{
     display: none;
+  }
+  .footer_copy br{
+    display: block;
   }
 }
 @media screen and ( max-width: 360px ){
