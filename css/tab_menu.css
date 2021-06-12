@@ -10,6 +10,9 @@
   background: #fff;
   border-radius: 100px;
 }
+.tab_menu_wrap span{
+  cursor: pointer;
+}
 .tab_menu span{
   position: relative;
   display: inline-block;

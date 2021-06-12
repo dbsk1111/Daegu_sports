@@ -12,6 +12,9 @@
 .tab_menu_wrap{
   background: #f7f7f7;
 }
+.tab_menu_wrap span{
+  cursor: pointer;
+}
 /* 탭 메뉴 1 */
 .tab_content_01 *{
   box-sizing: border-box;

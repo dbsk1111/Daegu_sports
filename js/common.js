@@ -53,8 +53,8 @@ $(function(){
         $('+ul',this).slideDown('slow')
         $(this).addClass('on')
       }
+      return false;
     }
-    return false;
   })
 
   // 푸터 셀렉트 박스
