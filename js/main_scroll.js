@@ -97,16 +97,13 @@ $(function(){
   // auto slide
   let timerId = setInterval(function(){
     $('.slide_button.next').trigger('click');
-    // $('#carousel_next').click();
   },5000);
-  // clearInterval
   $('.slide_wrap').mouseenter(function(){
     // auto slide stop;
     clearInterval(timerId);
   }).mouseleave(function(){
     // auto slide start;
     timerId = setInterval(function(){
-      // $('#carousel_next').trigger('click');
       $('.slide_button.next').click();
     },5000);
   })

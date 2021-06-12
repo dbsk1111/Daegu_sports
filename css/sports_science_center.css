@@ -22,8 +22,6 @@
 /* 소개글 */
 .introduce{
   overflow: hidden;
-  /* width: 1200px; */
-  /* margin: 0 auto; */
 }
 .introduce_01, .introduce_02{
   float: left;
@@ -66,7 +64,6 @@
   float: left;
   margin: 80px 0 0 50px;
 }
-
 /* 지원 */
 .support{
   margin-top: 60px;
@@ -173,7 +170,6 @@
 .list_right li:nth-child(3) strong:after{
   background-image: url('../img/sports_science_center/img_about02_icon06.svg');
 }
-
 @media screen and ( max-width: 1650px ){
   .window{
     display: none;
@@ -220,7 +216,6 @@
     font-size: 20px;
   }
 }
-
 @media screen and ( max-width: 1280px ){
   .introduce_img{
     width: 47%;
@@ -307,7 +302,6 @@
     background-image: url('../img/sports_science_center/img_about02_icon06_on.svg');
   }
 }
-
 @media screen and ( max-width: 768px ){
   .support {
     background: none;

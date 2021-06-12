@@ -1,15 +1,12 @@
 @charset "utf-8";
-
 /* 헤더 시작 */
 #header.on{
   position: fixed;
   margin-top: 25px;
 }
-
 #header.on .btn_menu {
   top: -2px;
 }
-
 /* 왼쪽 메뉴 */
 #lnb{
   position: fixed;
@@ -47,15 +44,11 @@
   transition: background .2s, box-shadow .2s;
   text-decoration: none;
 }
-
 .section_name.on{
   background-color: rgba(255,255,255,1);
   box-shadow: 0 0 1px rgba(0,0,0,0.2);
   border-color: #f1f1f1;
 }
-
-
-
 .active_section:before{
   content: '';
   position: absolute;
@@ -160,13 +153,9 @@ section{
   z-index: -1;
 }
 /* 2페이지 */
-/* .2page_wrap 이거 왜 안 됨? */
 .news_area{
   position: relative;
   max-width: 1300px;
-  /* margin: 0 auto; */
-  /* top: 50%; */
-  /* transform: translateY( -50% ); */
 }
 .section_title{
   display: inline-block;
@@ -238,10 +227,8 @@ input{ display: none; }
   border: 3px solid #00974a;
   border-radius: 35px;
 }
-
 .tab_item ul{
   margin-top: 41px;
-  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
   width: 1300px;
@@ -255,13 +242,10 @@ input{ display: none; }
   padding: 50px 40px;
   line-height: 24px;
   width: 100%;
-  /* width: calc( 100% / 3 - 34px ); */
   background: #f9f9f9;
   border: 1px solid transparent;
   box-sizing: border-box;
-  /* 크기를 width height로 지정하지 않을 경우 크기에 영향을 준다 */
   text-decoration: none;
-  /* margin-right: 51px; */
 }
 .tab_item ul li a:hover{
   transition: all 0.2s ease-out 0s;
@@ -295,9 +279,6 @@ input{ display: none; }
   font-weight: 300;
   height: 48px;
   word-wrap: break-word;
-  /* display: -webkit-box; */
-  /* -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; */
   overflow: hidden;
 }
 .tab_title ~ span{
@@ -311,8 +292,6 @@ input{ display: none; }
 /* 3페이지 */
 /* 배너 */
 .banner{
-  /* float: left; */
-  /* display: inline-block; */
   display: flex;
   align-items: center;
   width: 760px;
@@ -326,10 +305,6 @@ input{ display: none; }
 }
 .gallery .section_title{
   right: 53px;
-  /* top: 50%; */
-  /* left: 325px; */
-  /* width: 435px; */
-  /* transform: translateY( -50% ); */
 }
 .section_title .white{
   color: #fff;
@@ -357,17 +332,12 @@ input{ display: none; }
 }
 /* 슬라이드 갤러리 */
 .content_area{
-  /* float: left; */
   margin-top: 115px;
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   padding-left: 97px;
   width: calc(100% - 760px);
   box-sizing: border-box;
-}
-.content_area .section_title{
-  /* margin-top: 192px; */
 }
 .slide_wrap{
   overflow: hidden;
@@ -489,18 +459,14 @@ input{ display: none; }
   text-align: center;
   color: #444;
   font-size: 15px;
-  /* letter-spacing: -0.2px; */
   transition: .2s;
 }
 .webnsite_box a:hover{
   color: #00974a;
-  /* font-weight: 700; */
 }
 .webnsite_box a:hover img{
-  /* border-width: 3px; */
   border-color: #00974a;
 }
-
 .webnsite_box img{
   position: relative;
   display: block;
@@ -510,21 +476,6 @@ input{ display: none; }
   box-sizing: border-box;
   transition: .2s;
 }
-.webnsite_box img:before{
-  /* content: '';
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd; */
-}
-.webnsite_box a:hover img:before{
-  /* border-width: 3px; */
-  /* border-color: #00974a; */
-}
-
 /* 5페이지 */
 #page5{
   flex-direction: row-reverse;
@@ -549,7 +500,6 @@ input{ display: none; }
   margin-top: 18px;
   color: #333;
   font-size: 15px;
-  /* font-weight: 500; */
 }
 .link_area li{
   display: inline-block;
@@ -568,7 +518,6 @@ input{ display: none; }
   background-image: url('../img/img_map.jpg');
   background-position: 50% 50%;
 }
-
 /* main_page */
 @media screen and ( max-width: 1580px ){
   #lnb{
@@ -576,10 +525,6 @@ input{ display: none; }
   }
   #page1 h2{
     font-size: 50px;
-  }
-  .news_area {
-    /* 11111111111111111111 */
-    /* max-width: 1220px; */
   }
   .section_title h3{
     font-size: 40px;
@@ -632,7 +577,6 @@ input{ display: none; }
     height: 100vh;
   }
   #page2{
-    /* margin: 40px 30px; */
     padding: 40px 30px;
   }
   .section_title h3{
@@ -668,7 +612,6 @@ input{ display: none; }
   }
   .tab_item ul li{
     flex-basis: calc(100% / 3 - 14.1px);
-    /* flex-basis: 386px; */
   }
   .section_title, .content_area.right .section_title, .webnsite_box ul, .banner.local,.content_area.local.right,.link_area {
     width: 100%;

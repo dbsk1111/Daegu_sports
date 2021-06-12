@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* 섹션 타이틀 배너 */
 .section_title{
   background-image: url('../img/img_visual03.jpg');
@@ -13,7 +12,6 @@
  justify-content: space-between;
  flex-wrap: wrap;
 }
-
 .gallery_bbs li{
   position: relative;
   width: 32%;
@@ -101,7 +99,6 @@
 .gallery_bbs li:nth-child(9) i{
   background-image: url('../img/gallery/gallery09.jpg')
 }
-
 @media screen and ( max-width: 640px ){
   .gallery_bbs li{
     width: 49%;

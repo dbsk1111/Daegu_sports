@@ -15,8 +15,6 @@
   font-family: 'Play', 'Noto Sans KR', Sans-serif;
   background: url('../img/select_arrow.svg') no-repeat calc(100% - 10px) 50% / 7px 7px;
   border: 1px solid #ddd;
-  /* -webkit-border-radius: 1px;
-  -webkit-appearance: none; */
   appearance: none;
 }
 .search_group input{
@@ -62,17 +60,18 @@
   background-color: #f3f6fd;
   border-color: #bdc7e0;
 }
-
 .pagination .first_btn, .pagination .prev_btn, .pagination .next_btn, .pagination .last_btn{
   background: url('../img/btn_pagination.png') no-repeat;
 }
 .pagination .first_btn{
+  display: none;
   background-position: -1px -1px;
 }
 .pagination .first_btn:hover{
   background-position: -1px -39px;
 }
 .pagination .prev_btn{
+  display: none;
   background-position: -39px -1px;
 }
 .pagination .prev_btn:hover{

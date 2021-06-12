@@ -36,6 +36,7 @@ $(function(){
   //   }
   //   return false;
   // })
+
   $(window).resize(function(){
     if( $(window).width() > 500 ){
       $('.all_sub_menu').css('display', 'block')
@@ -90,13 +91,11 @@ $(function(){
   // 탑 버튼, 진행도 표시
   let progressPath = $('path')[0];
   let pathLength = progressPath.getTotalLength(); // 307.91943359375, 패스의 총 길이
-  // progressPath.css('stroke-dasharray', pathLength) // 어떻게 적용하지?
+  // progressPath.css('stroke-dasharray', pathLength) // 어떻게 적용?
   progressPath.style.strokeDasharray = pathLength; // 최대 길이 설정
   progressPath.style.strokeDashoffset = pathLength; // 현재 길이, 0이 최대, 초기화 작업?
   let updateProgress = function(){
-    let scroll = $(window).scrollTop(); // 현재 스크롤의 위치, 계속 바뀜
-    // $(document).height() 4800 페이지의 최대 크기
-    // $(window).height()) 800 현재 창의 크기
+    let scroll = $(window).scrollTop(); // 현재 스크롤의 위치
     let height = $(document).height() - $(window).height();
     let progress = pathLength - (scroll * pathLength / height);
     progressPath.style.strokeDashoffset = progress; // 현재 위치 %로 반영한 offset 조절
