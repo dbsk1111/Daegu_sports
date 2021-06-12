@@ -278,8 +278,7 @@ input{ display: none; }
   line-height: 24px;
   font-weight: 300;
   height: 48px;
-  word-wrap: break-word;
-  overflow: hidden;
+  word-break: break-all;
 }
 .tab_title ~ span{
   display: block;

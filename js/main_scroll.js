@@ -107,4 +107,12 @@ $(function(){
       $('.slide_button.next').click();
     },5000);
   })
+
+  // 말줄임표
+  const length = 48;
+  $('.tab_item p').each(function(){
+    if( $(this).text().length >= length ){
+      $(this).text($(this).text().substr(0,length)+'..');
+    }
+  })
 })
