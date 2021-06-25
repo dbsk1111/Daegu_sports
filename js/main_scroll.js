@@ -43,7 +43,6 @@ $(function(){
 
   // lnb 이동
   $('#lnb a').click(function(){
-    console.log('클릭')
     let winHeight = $(window).height();
     let getGoto = $(this).attr('href');
     let goTo = getGoto.substr(1);
